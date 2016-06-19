@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: RECURSIVE ACF to REST API
+ * Plugin Name: RECURSIVE ACF to WP REST API
  * Description: Appends Advanced Custom Fields Data to the WP REST API v2
  * Author: Paule Lepage
  * Author URI: http://github.com/nyanofthemoon
  * Version: 1.0.0
- * Plugin URI: http://github.com/nyanofthemoon/recursive-acf-to-rest-api
+ * Plugin URI: http://github.com/nyanofthemoon/recursive-acf-to-wp-rest-api
  */
 
-function recursive_acf_to_rest_api_init() {
+function recursive_acf_to_wp_rest_api_init() {
     add_action('rest_api_init', 'recursive_acf_register_acf');
 }
 
@@ -44,4 +44,4 @@ function recursive_acf_get_fields($id) {
     return $data;
 }
 
-add_action('plugins_loaded', 'recursive_acf_to_rest_api_init');
+add_action('plugins_loaded', 'recursive_acf_to_wp_rest_api_init');

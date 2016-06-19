@@ -1,4 +1,4 @@
-# Recursive ACF To WordPress REST API (v2)
+# Recursive ACF To WP REST API (v2)
 
 This is a WordPress plugin which recursively appends Advanced Custom Fields Data to the WP REST API v2 for both standard objects and custom posts.
 
