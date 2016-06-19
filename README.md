@@ -15,7 +15,7 @@ This is a WordPress plugin which recursively appends Advanced Custom Fields Data
 * `curl http://localhost/wp-json/v2/wp/myobject/1`
 
 ##### Standard Response
-```
+```javascript
 {
   id: 1,
   date: "2016-06-05T21:33:59",
@@ -33,7 +33,7 @@ This is a WordPress plugin which recursively appends Advanced Custom Fields Data
 ```
 
 #####  Response With Plugin
-```
+```javascript
 {
   id: 1,
   date: "2016-06-05T21:33:59",
