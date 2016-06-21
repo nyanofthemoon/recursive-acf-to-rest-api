@@ -28,7 +28,12 @@ function recursive_acf_register_acf() {
 }
 
 function recursive_acf_get_acf($object, $field_name, $request) {
-    return recursive_acf_get_fields($object->id);
+    if ($request->get_method() != 'POST') {
+        return recursive_acf_get_fields($object->id);
+    } else {
+        acf_save_post($object['id']);
+        return get_fields($object['id']);
+    }
 }
 
 function recursive_acf_get_fields($id) {
