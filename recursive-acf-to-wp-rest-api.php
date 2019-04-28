@@ -28,7 +28,7 @@ function recursive_acf_register_acf() {
 }
 
 function recursive_acf_get_acf($object, $field_name, $request) {
-    return recursive_acf_get_fields($object->id);
+    return recursive_acf_get_fields($object['id']);
 }
 
 function recursive_acf_update_acf($values, $object, $field_name) {
